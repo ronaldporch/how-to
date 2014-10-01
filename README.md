@@ -1,28 +1,5 @@
-== README
+== How2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple app that allows users to create a How-To for any task in life along with setting as many steps as possible for completing the task.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+This app uses a tradition CRUD system, so users can also edit or delete either how-tos or steps in the how-to.
