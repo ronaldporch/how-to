@@ -4,3 +4,4 @@
 <h3>
 <%= "#{@step.content}" %>
 </h3>
+<span><%= link_to "Edit", edit_howto_step_path(@step.howto_id, @step) %></span> | <span><%= link_to "Delete", howto_step_path(@step.howto_id, @step), method: :delete, data: {confirm: "Are you sure?"} %></span>

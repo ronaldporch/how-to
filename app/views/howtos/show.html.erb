@@ -9,6 +9,7 @@
 <ol>
 <% @steps.each do |s| %>
 <li><%= link_to "#{s.name}", howto_step_path(s.howto_id, s.id) %></li>
+
 <% end %>
 </ol>
 <% end %>

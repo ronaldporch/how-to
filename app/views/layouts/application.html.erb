@@ -13,6 +13,11 @@
 
   <body>
     <%= render 'layouts/nav' %>
+    <% flash.each do |key, value| %>
+  <div class="alert-box">
+    <%= value %>
+  </div>
+<% end %>
     <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>

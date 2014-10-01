@@ -1,0 +1,7 @@
+<%= form_for ([@howto, @step]) do |f| %>
+  <%= f.label :new_step %>
+  <%= f.text_field :name %>
+  <%= f.label :details %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>

@@ -2,7 +2,8 @@
 # http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  text: MyString
+  content: MyString
+  id: 1
 
 two:
-  text: MyString
+  content: MyString
