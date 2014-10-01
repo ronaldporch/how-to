@@ -1,0 +1,22 @@
+<h2>
+<%= @howto.content %>
+</h2>
+
+<% if @steps.nil? %>
+<h3>There aren't any steps yet! You should add some below</h3>
+<% else %>
+<h3>Steps: </h3>
+<ol>
+<% @steps.each do |s| %>
+<li><%= link_to "#{s.name}", howto_step_path(s.howto_id, s.id) %></li>
+<% end %>
+</ol>
+<% end %>
+
+<%= form_for ([@howto, @step]) do |f| %>
+  <%= f.label :new_step %>
+  <%= f.text_field :name %>
+  <%= f.label :details %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
