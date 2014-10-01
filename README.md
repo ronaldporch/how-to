@@ -1,4 +1,4 @@
-== How2
+#How2
 
 This is a simple app that allows users to create a How-To for any task in life along with setting as many steps as possible for completing the task.
 
