@@ -1,0 +1,8 @@
+<% unless @howtos.nil? %>
+<% @howtos.each do |h| %>
+<h2><%= link_to "#{h.content}", howto_path(h) %></h2>
+<span><%= link_to "Edit", edit_howto_path(h) %></span> | <span><%= link_to "Delete", howto_path(h), method: :delete, data: {confirm: "Are you sure?"} %></span>
+<% end %>
+<% end %>
+
+<%= render 'form' %>
